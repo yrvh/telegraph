@@ -1,0 +1,65 @@
+<!--pages/release/release_add/release_add.wxml-->
+<view class="app-container">
+  <view class="person-type">
+    <van-tabs type="card" color="#39B54A" active="{{ active }}" bind:change="onChange">
+      <van-tab title="求职"></van-tab>
+      <van-tab title="招聘"></van-tab>
+    </van-tabs>
+  </view>
+
+  <view class="labour add-item">
+    <text class="add-item-title">劳务类型: </text>
+    <van-radio-group direction="horizontal" value="{{ radio }}" bind:change="onChange">
+      <van-radio name="1">短期劳务</van-radio>
+      <van-radio name="2">跑退帮忙</van-radio>
+    </van-radio-group>
+  </view>
+  <view class="labour add-item">
+    <text class="add-item-title">是否急聘: </text>
+    <van-radio-group direction="horizontal" value="{{ radio }}" bind:change="onChange">
+      <van-radio name="1">正常</van-radio>
+      <van-radio name="2">急聘</van-radio>
+    </van-radio-group>
+  </view>
+
+  <view class="title add-item">
+    <text class="add-item-title">发布标题: </text>
+    <van-field value="{{ value }}" placeholder="请输入标题" border="{{ false }}" bind:change="onChange" />
+  </view>
+  <view class="skill add-item">
+    <text class="add-item-title">{{1==1? '个人优势': '任职要求'}}: </text>
+    <van-field value="{{ value }}" placeholder="请选择" border="{{ false }}" bind:change="onChange" />
+  </view>
+  <view class="skill add-item">
+    <text class="add-item-title">{{1==1? '期望岗位': '岗位描述'}}: </text>
+    <van-field value="{{ value }}" placeholder="请输入岗位内容" border="{{ false }}" bind:change="onChange" />
+  </view>
+
+  <view class="title add-item">
+    <text>价格:</text>
+    <van-field value="{{ value }}" placeholder="请输入价格" border="{{ false }}" bind:change="onChange" />
+  </view>
+  <view class="addr add-item">
+    <text>选择地址:</text>
+    <van-field value="{{ value }}" placeholder="选择地址" border="{{ false }}" bind:change="onChange" />
+  </view>
+  <view class="addr add-item">
+    <text>详细地址:</text>
+    <van-field value="{{ value }}" placeholder="请输入详细地址" border="{{ false }}" bind:change="onChange" />
+  </view>
+  <view class="addr add-item">
+    <text>联系人:</text>
+    <van-field value="{{ value }}" placeholder="请输入联系人" border="{{ false }}" bind:change="onChange" />
+  </view>
+  <view class="addr add-item">
+    <text>联系电话:</text>
+    <van-field value="{{ value }}" placeholder="请输入联系电话" border="{{ false }}" bind:change="onChange" />
+  </view>
+
+  <view class="add-footer">
+    <van-button type="primary" bind:click="handleAdd" custom-style="width: 600rpx;">确认发布</van-button>
+  </view>
+
+
+</view>
+

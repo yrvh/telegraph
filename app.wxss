@@ -1,0 +1,56 @@
+/**app.wxss**/
+@import '/assets/iconfont/iconfont.wxss';
+
+page,view,text,text,swiper,swiper-item,image,navigator,input,scroll-view,video {font-size: 28rpx; margin: 0; padding: 0;box-sizing: border-box;}
+/* 定义主题颜色 */
+page {
+  /* --my_primary: #006EFF; */
+  --my_primary: #39b54a;
+  --my_success: #339966;
+  --my_warning: #ff9933;
+  --my_danger: #ff4949;
+  --my_info: #555555;
+  --my_white: #ffffff;
+  --my_black: #000000;
+  --my_opacity: rgba(0,0,0,0);
+
+  --text_dark: #524D4A;
+  --text_middle: #888888;
+  --text_light: #939393;
+
+  --border_dark: #9fa1a2;
+  --border_middle: #DDDDDD;
+  --border_light: #F1F1F1;
+
+  --bg_pagination: #f1f1f1;
+  --bg_theme: #939393;
+
+  /* weapp 组件的 全局样式更改*/
+  /* --button-primary-background-color: #00f; */
+  /* --dropdown-menu-title-font-size: 30rpx; */
+  /* --dropdown-menu-background-color: var(--bg_pagination); */
+  --dropdown-menu-height: 50rpx;
+  --tag-default-color: var(--bg_pagination);
+  --tag-text-color: var(--text_middle);
+
+  /* weapp 的 style内置样式 */
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
+    Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei',
+    sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.app-container {
+  height: 100%;
+  /* padding: 0 25rpx; */
+  box-sizing: border-box;
+  /* background-color: #eff; */
+}

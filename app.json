@@ -1,0 +1,85 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/release/release",
+    "pages/release/release_add/release_add",
+    "pages/mine/mine",
+    "pages/message/message",
+    "pages/collect/collect",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#39B54A",
+    "navigationBarTitleText": "城市电线杆",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#eee",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 30
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#39B54A",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list" : [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/icon/home.png",
+        "selectedIconPath": "/assets/icon/home1.png"
+      },
+      {
+        "pagePath": "pages/collect/collect",
+        "text": "收藏",
+        "iconPath": "/assets/icon/collect.png",
+        "selectedIconPath": "/assets/icon/collect1.png"
+      },
+      {
+        "pagePath": "pages/release/release",
+        "text": "发布",
+        "iconPath": "/assets/icon/release.png",
+        "selectedIconPath": "/assets/icon/release1.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/assets/icon/message.png",
+        "selectedIconPath": "/assets/icon/message1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/assets/icon/mine.png",
+        "selectedIconPath": "/assets/icon/mine1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "yyy-card":"/components/card/card",
+    "van-config-provider":"@vant/weapp/config-provider/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-area": "@vant/weapp/area/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-field": "@vant/weapp/field/index"
+  }
+}

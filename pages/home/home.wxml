@@ -1,0 +1,36 @@
+<!--pages/home/home.wxml-->
+<view class="app-container">
+  <!-- 顶部筛选栏 -->
+  <view class="top topclass">
+    <view class="top-left">
+      <span class="top-textclass {{cut_index == 0? 'active':''}}" bindtap="changeRole" data-id="0">岗位</span>
+      <span class="top-textclass  {{cut_index == 1? 'active':''}}" bindtap="changeRole" data-id="1">求职者</span>
+    </view>
+    <view class="top-right">
+      <view class="select-city" bindtap="handleCity">
+        {{cut_city_name}}
+        <!-- <van-icon name="close"></van-icon> -->
+        <text class="iconfont icon-xiangxia1 custom-icon"></text>
+      </view>
+      <van-popup show="{{show_select_city}}" z-index="100" overlay position="bottom"
+          duration="300" round close-click-overlay lock-scroll>
+        <van-area area-list="{{ area_list }}" value="{{cut_city}}" title='选择城市' bind:cancel="cancelCity" bind:confirm="confirmCity"/>
+      </van-popup>
+
+      <van-dropdown-menu>
+        <van-dropdown-item value="{{ cut_ordertype }}" options="{{ ordertype_option }}" />
+        <van-dropdown-item value="{{ cut_keyword }}" options="{{ keyword_option }}" />
+      </van-dropdown-menu>
+    </view>
+  </view>
+  <!-- 顶部站位栏 -->
+  <view class="stance"></view>
+  
+  <!-- 展示区列表 -->
+  <yyy-card wx:for="{{list}}" wx:key="index" the_id="{{item.id}}" title="{{item.title}}" hurry="{{item.hurry}}" 
+      price="{{item.price}}" avatar="{{item.avatar}}" name="{{item.name}}" addr="{{item.addr}}" 
+      tag="{{item.tag}}" profile="{{item.profile}}" collect="{{item.collect}}" errand="{{item.errand}}"
+      bind:detail="handleCard" bind:collect="handleCollect">
+  </yyy-card>
+  
+</view>

@@ -1,0 +1,15 @@
+{
+  "name": "telegraph",
+  "version": "1.0.0",
+  "description": "this is an information release project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yrvh",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/area-data": "^1.1.3",
+    "@vant/weapp": "^1.9.1"
+  }
+}

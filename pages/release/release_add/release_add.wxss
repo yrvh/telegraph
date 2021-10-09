@@ -1,0 +1,28 @@
+/* pages/release/release_add/release_add.wxss */
+.app-container {
+  padding: 22rpx 38rpx 0;
+  /* background-color: cornsilk; */
+}
+
+.person-type {
+  margin-bottom: 50rpx;
+}
+
+.add-item {
+  border-bottom: 2rpx solid var(--border_light);
+  padding: 20rpx 0;
+  display: flex;
+  align-items: center;
+}
+.add-item-title {
+  margin-right: 20rpx;
+}
+.labour {
+}
+
+.add-footer {
+  margin: 30rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

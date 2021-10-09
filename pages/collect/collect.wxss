@@ -1,0 +1,58 @@
+/* pages/collect/collect.wxss */
+
+/* 站位元素 */
+.stance {
+  height: 60rpx;
+  /* margin-bottom: 20rpx; */
+}
+
+.top {
+  padding: 0 25rpx;
+  height: 60rpx;
+  width: 750rpx;
+  /* margin: 0 auto; */
+  position: fixed; 
+  z-index: 8;
+  background-color: var(--my_white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border_light);
+}
+.top-textclass {
+  color: var(--text_light);
+  margin-right: 20rpx;
+}
+.top-textclass.active {
+  color: var(--text_dark);
+  font-weight: 600;
+
+}
+.top-left {
+  /* background-color: antiquewhite; */
+}
+.top-right {
+  /* flex: 1; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-right .select-city  {
+  background-color: var(--my_white);
+  /* background-color: aqua; */
+  margin-right: 10rpx;
+  font-size: 24rpx;
+}
+.top-right .custom-icon {
+  font-size: 18rpx;
+}
+.top-right .van-ellipsis {
+  /* height: 50rpx !important;*/
+  font-size: 24rpx !important; 
+}
+.top-right .van-dropdown-menu {
+  box-shadow: none;
+}
+.top-right .van-dropdown-menu__item {
+  margin-right: 30rpx !important;
+}

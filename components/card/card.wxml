@@ -1,0 +1,30 @@
+<!--components/card/card.wxml-->
+
+<view class="yyy-card" bindtap="onCard" data-the_id="{{the_id}}">
+  <view class="title card-item">
+    <view>
+      <text class="title-text">{{title}}</text>
+      <van-tag class="title-hurry" plain type="primary" wx-if="{{hurry}}">急聘</van-tag>
+      <van-tag class="title-errand" plain type="primary" wx-if="{{errand}}">跑腿</van-tag>
+    </view>
+    <text class="title-price">{{price}}</text>
+  </view>
+  <view class="tags card-item">
+    <van-tag class="tag-item"  wx:for="{{tag}}" wx:key="index">{{item}}</van-tag>
+  </view>
+  <view class="profile card-item">
+    <text class="profile-item" wx:for="{{profile}}" wx:key="index">{{item}}</text>
+  </view>
+  <view class="info card-item">
+    <view class="info-item">
+      <view class="info-avatar"></view>
+      <view class="info-person">{{name}} . {{the_type}}</view>
+    </view>
+    
+    <view class="info-item">
+      <view class="info-addr">{{addr.pro}} . {{addr.city}} . {{addr.area}}</view>
+      <text class="info-collect iconfont icon-jushoucang" hidden="{{collect}}" bindtap="onCollect" data-the_id="{{the_id}}"></text>
+      <text class="info-collect iconfont icon-jushoucanggift is-collect " hidden="{{!collect}}" catch:tap="onCollect" data-the_id="{{the_id}}"></text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,64 @@
+/* components/card/card.wxss */
+@import '/assets/iconfont/iconfont.wxss';
+
+.yyy-card {
+  padding: 20rpx 25rpx;
+  background-color: var(--my_white);
+  border-bottom: 18rpx solid var(--border_light);
+}
+.yyy-card .card-item {
+  margin-bottom: 16rpx;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.title .title-hurry {
+  margin-right: 14rpx;
+}
+.title .title-text {
+  font-size: 34rpx;
+  margin-right: 14rpx;
+}
+.title .title-price {
+  color: var(--my_primary);
+}
+.tags .tag-item {
+  margin-right: 14rpx;
+}
+.profile .profile-item {
+  margin-right: 18rpx;
+  font-size: 24rpx;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0 !important;
+}
+.info .info-item {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .info-avatar {
+  background-color: aqua;
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 50%;
+  margin-right: 14rpx;
+}
+.info .info-person {
+  font-size: 22rpx;
+}
+.info .info-addr {
+  font-size: 22rpx;
+  color: var(--text_middle);
+  margin-right: 14rpx;
+}
+.info .info-collect {
+  font-size: 26rpx;
+  color: var(--text_middle);
+}
+.info .is-collect {
+  color: var(--my_danger);
+}

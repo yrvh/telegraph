@@ -1,6 +1,8 @@
 // pages/home/home.js
 // import {areaList} from '@vant/area-data'
 
+const app = getApp()
+// app.global_data.token   // 可以拿到全局变量的token
 Page({
 
   /**
